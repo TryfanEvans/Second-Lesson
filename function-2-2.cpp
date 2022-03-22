@@ -1,3 +1,3 @@
-int maximum_sum(int *nums, int length);
+int maximum_sum(int *nums, int length)
 {
 }
