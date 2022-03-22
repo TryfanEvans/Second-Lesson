@@ -1,9 +1,12 @@
-int diagonal(int array[4][4])
+#include <iostream>
+
+void copy_2d_strings(std::string first[][2], std::string second[][2], int n)
 {
-    int sum = 0;
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < n; i++)
     {
-        sum += array[i][i];
+        for (int j = 0; j < 2; j++)
+        {
+            second[i][j] = first[i][j];
+        }
     }
-    return sum;
 }

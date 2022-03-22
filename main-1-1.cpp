@@ -1,10 +1,18 @@
 #include <iostream>
 
-extern int diagonal(int array[4][4]);
+extern void copy_2d_strings(std::string first[][2], std::string second[][2], int n);
 
 int main()
 {
-    int array[4][4] = {{1, 4, 5, 2}, {2, 4, 3, 5}, {3, 5, 5, 3}, {1, 4, 2, 6}};
-    std::cout << diagonal(array) << std::endl;
+    std::string first[3][2] = {"df", "bb", "ac"};
+    std::string second[3][2];
+    copy_2d_strings(first, second, 2);
+    for (int i = 0; i < 2; i++)
+    {
+        for (int j = 0; j < 2; j++)
+        {
+            //         std::cout << second[i][j] << std::endl;
+        }
+    }
     return 0;
 }
