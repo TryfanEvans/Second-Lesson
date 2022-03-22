@@ -1,6 +1,6 @@
 #include <iostream>
 
-extern void cpyda(double *old_array, double *new_array, int length);
+extern int maximum_sum(int *nums, int length);
 
 int main()
 {
